@@ -1,4 +1,4 @@
-const Thought = require('./');
+const Thought = require('../models/thoughts');
 
 // retrieves thoughtId and creates newReact
 const updateReact = async (req,res)=>{
@@ -12,7 +12,7 @@ const updateReact = async (req,res)=>{
         return res.json(thought);
     }catch (err){
         console.log(err);
-        return res.status(500).json({ msg: 'Error', err: err});
+        return res.status(500).json({ msg: 'cant find one', err: err});
       }
 };
 
@@ -26,7 +26,7 @@ const deleteReact = async (req,res)=>{
     return res.json(data);
 }catch (err){
     console.log(err);
-    return res.status(500).json({ msg: 'Error', err: err});
+    return res.status(500).json({ msg: 'cant delete', err: err});
   }
 };
 module.exports = {deleteReact,updateReact};

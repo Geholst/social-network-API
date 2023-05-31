@@ -1,5 +1,5 @@
 const express = require('express');
-const db = require('./config');
+const db = require('./config/index');
 const routes = require('./routes');
 
 const PORT = 3001;
@@ -14,3 +14,7 @@ db.once('open', () => {
     console.log(`running on port ${PORT}!`);
   });
 });
+
+// process.on('uncaughtException', function (err) {
+//   console.log(err);
+// }); 
