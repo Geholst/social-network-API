@@ -13,7 +13,7 @@ This is a social network API built on MongoDB. It can be used to  create, update
 Once you download the app you can run npm i to install all the necessary npm packages. Then you can go in insomnia to look at and update all the routhes.
 
 ## Usage
-Here is a video walking through how to use it: 
+Here is a video walking through how to use it: https://www.youtube.com/watch?v=GzxENn40usA 
 
 ## Credits
 technologies used: 
